@@ -175,4 +175,8 @@ body {
   .bannerHead {
     font-size: 2rem;
   }
+  .bannerDescription {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
 }
