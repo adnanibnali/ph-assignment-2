@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/* Theme Section Starts */
+:root {
+  --primary-color: #fea301;
+  --primary-text: #1e1e1e;
+  --secondary-text: #fea301;
+  --tertiary-text: #01acfd;
+  --quaternary-text: #05d4df;
+  --quinary-text: #5d58ef;
+  --bg-appearance: white;
+}
+body {
+  margin: 0;
+}
+.quicksand-google-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Theme Section Ends */
+
+/* Shared Style Starts Here */
+.btnSecondary {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+/* Shared Style Ends Here */
+
+/* Navbar Style Starts Here */
+.branding {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  width: 12.6rem;
+}
+.brandLogo {
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.brandName {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+.navContainer {
+  max-width: 72.5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navItemsContainer {
+  width: 24rem;
+}
+.navItems {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.navLink {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.activeNav {
+  font-weight: 700;
+}
+#home {
+  color: var(--secondary-text);
+}
+#about {
+  color: var(--tertiary-text);
+}
+#facilities {
+  color: var(--quaternary-text);
+}
+#admission {
+  color: var(--quinary-text);
+}
