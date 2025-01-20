@@ -89,7 +89,7 @@ body {
   color: var(--quinary-text);
 }
 
-.hamburgerIcon {
+#hamburgerIcon {
   font-size: 1.8rem;
   display: none;
 }
@@ -106,7 +106,7 @@ body {
     padding: 0.5rem 1.5rem;
     border-bottom: 1px solid var(--primary-color);
   }
-  .hamburgerIcon {
+  #hamburgerIcon {
     display: inline-block;
   }
 }
