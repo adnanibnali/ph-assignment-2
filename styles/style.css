@@ -3,6 +3,7 @@
 /* Theme Section Starts */
 :root {
   --primary-color: #fea301;
+  --secondary-color: #1e1e1e;
   --primary-text: #1e1e1e;
   --secondary-text: #fea301;
   --tertiary-text: #01acfd;
@@ -22,6 +23,16 @@ body {
 /* Theme Section Ends */
 
 /* Shared Style Starts Here */
+.btnPrimary {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
 .btnSecondary {
   padding: 1rem 3rem;
   border: none;
@@ -94,9 +105,47 @@ body {
   display: none;
 }
 
+/* Banner Section Style Starts Here */
+.bannerContainer {
+  max-width: 72.5rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bannerDetails {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+}
+.bannerHead {
+  font-size: 3.5rem;
+  margin: 0;
+}
+#empower {
+  color: var(--secondary-text);
+}
+#studentsFromSmallAge {
+  color: var(--primary-text);
+}
+#towards {
+  color: var(--tertiary-text);
+}
+.bannerDescription {
+  font-size: 1.25rem;
+}
+.bannerImgContainer {
+  max-width: 29rem;
+}
+.bannerImg {
+  width: 100%;
+}
+
 /* Media Queries For Responsive Website */
-/* Media Query For Navbar */
 @media screen and (max-width: 576px) {
+  /* Media Query For Navbar */
   .navItemsContainer,
   .navBtn,
   .brandName {
@@ -108,5 +157,22 @@ body {
   }
   #hamburgerIcon {
     display: inline-block;
+  }
+  /* Media Query For Banner Section */
+  .bannerContainer {
+    flex-direction: column-reverse;
+    gap: 1.25rem;
+  }
+  .bannerImgContainer {
+    width: 85%;
+  }
+  .bannerDetails {
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    max-width: 22rem;
+  }
+  .bannerHead {
+    font-size: 2rem;
   }
 }
