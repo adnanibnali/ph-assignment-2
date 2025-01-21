@@ -229,6 +229,9 @@ body {
   font-size: var(--primary-description-size);
   line-height: 1.7rem;
 }
+.readMore {
+  text-decoration: none;
+}
 
 #btnKinder {
   color: var(--tertiary-text);
@@ -269,6 +272,10 @@ body {
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.5s all;
+}
+.standardBtn:hover {
+  transform: scale(1.2);
 }
 .standardBtn > i {
   font-size: 1.5rem;
