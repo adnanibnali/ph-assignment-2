@@ -266,7 +266,8 @@ body {
   transition: 0.5s all;
 }
 .standardBtn:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(360deg);
+  background-color: var(--secondary-color);
 }
 .standardBtn > i {
   font-size: 1.5rem;
