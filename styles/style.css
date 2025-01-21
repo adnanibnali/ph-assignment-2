@@ -343,7 +343,7 @@ body {
 .storyCard {
   background-color: var(--bg-appearance);
   max-width: 18rem;
-  height: 18rem;
+  max-height: 18rem;
   border-radius: 1rem;
 }
 .storyImgContainer {
@@ -417,5 +417,22 @@ body {
   }
   .standardBtnContainer {
     display: none;
+  }
+  /* Media Query For Our Stories Section */
+  .firstChild {
+    display: none;
+  }
+  .storyCardsContainer {
+    max-width: 91%;
+  }
+  .badge {
+    font-size: 0.5rem;
+    left: 2rem;
+    bottom: -0.4rem;
+  }
+  .storyHead {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.6rem 1.5rem;
   }
 }
