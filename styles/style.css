@@ -10,6 +10,8 @@
   --quaternary-text: #05d4df;
   --quinary-text: #5d58ef;
   --bg-appearance: white;
+  --primary-description-color: #808080;
+  --primary-description-size: 0.9rem;
 }
 body {
   margin: 0;
@@ -43,6 +45,17 @@ body {
   background-color: var(--primary-color);
   cursor: pointer;
 }
+.btnGhost {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
 /* Shared Style Ends Here */
 
 /* Navbar Style Starts Here */
@@ -141,6 +154,123 @@ body {
 }
 .bannerImg {
   width: 100%;
+}
+
+/* Standard Section Style Starts Here */
+.standardBg {
+  width: 100vw;
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.standardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.standardCardsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 72rem;
+  margin: 4rem auto;
+}
+.standardContainerHead {
+  font-size: 2.8rem;
+}
+.standardCard {
+  width: 22rem;
+  height: 29rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 1.2rem;
+  text-align: center;
+}
+#kinderCard {
+  border: 1px solid #def5ff;
+}
+#elementaryCard {
+  border: 1px solid #fff4dc;
+}
+#middleCard {
+  border: 1px solid #f2e8ff;
+}
+.standardCardImgContainer {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-radius: 1.2rem;
+}
+#kinderCardImgContainer {
+  background-image: linear-gradient(#def5ff, white);
+}
+#elementaryCardImgContainer {
+  background-image: linear-gradient(#fff4dc, white);
+}
+#middleCardImgContainer {
+  background-image: linear-gradient(#f2e8ff, white);
+}
+.standardImg {
+  width: 8rem;
+}
+.standardCardHead {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.standardCardDescription {
+  color: var(--primary-description-color);
+  font-size: var(--primary-description-size);
+  line-height: 1.7rem;
+}
+
+#btnKinder {
+  color: var(--tertiary-text);
+  margin-bottom: 2rem;
+}
+#btnElementary {
+  color: var(--secondary-text);
+  margin-bottom: 2rem;
+}
+#btnMiddle {
+  color: var(--quinary-text);
+  margin-bottom: 2rem;
+}
+#btnKinder:hover {
+  background-color: var(--tertiary-text);
+  color: var(--bg-appearance);
+}
+#btnElementary:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-appearance);
+}
+#btnMiddle:hover {
+  background-color: var(--quinary-text);
+  color: var(--bg-appearance);
+}
+.standardBtnContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 8.5rem;
+}
+.standardBtn {
+  background-color: var(--primary-color);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.standardBtn > i {
+  font-size: 1.5rem;
+  color: var(--bg-appearance);
 }
 
 /* Media Queries For Responsive Website */
