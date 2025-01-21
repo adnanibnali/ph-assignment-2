@@ -158,7 +158,7 @@ body {
 
 /* Standard Section Style Starts Here */
 .standardBg {
-  width: 100vw;
+  width: 100%;
   background-image: url("../assets/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -171,8 +171,9 @@ body {
 }
 .standardCardsContainer {
   display: flex;
-  justify-content: space-between;
-  width: 72rem;
+  gap: 1rem;
+  align-items: center;
+  max-width: 72rem;
   margin: 4rem auto;
 }
 .standardContainerHead {
@@ -181,6 +182,7 @@ body {
 .standardCard {
   width: 22rem;
   height: 29rem;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,5 +310,24 @@ body {
   .bannerDescription {
     font-size: 0.8rem;
     font-weight: 500;
+  }
+  /* Media Query For Standard Curriculum Section */
+  .standardBg {
+    margin-top: 5rem;
+  }
+  .standardContainerHead {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .standardCardsContainer {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem auto;
+  }
+  .standardCard {
+    width: 91%;
+  }
+  .standardBtnContainer {
+    display: none;
   }
 }
