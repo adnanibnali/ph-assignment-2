@@ -26,10 +26,10 @@ body {
 
 /* Shared Style Starts Here */
 .btnPrimary {
-  padding: 1rem 3rem;
+  padding: 0.8rem 2.5rem;
   border: none;
   border-radius: 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   color: white;
   background-color: var(--secondary-color);
@@ -270,6 +270,96 @@ body {
 }
 .standardBtn > i {
   font-size: 1.5rem;
+  color: var(--bg-appearance);
+}
+
+/* Story Section Styles Starts Here */
+.storiesBg {
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(254, 161, 1, 0.3), transparent),
+    url("../assets/bg.png");
+  background-size: cover;
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+  background-repeat: no-repeat;
+}
+.storiesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2.5rem;
+  align-items: center;
+}
+.storyContainerHead {
+  font-size: 2.8rem;
+}
+.storyCardsFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 72rem;
+}
+.firstChild {
+  max-width: 33rem;
+  height: 37rem;
+  border-radius: 1rem;
+  background-color: var(--bg-appearance);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.storyDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.firstChildStoryHead {
+  font-size: 1.5rem;
+}
+.storyDes {
+  font-size: var(--primary-description-size);
+  color: var(--primary-description-color);
+}
+.storyHead {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+}
+.storyImgContainer {
+  width: 100%;
+}
+.storyImg {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.storyCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.storyCard {
+  background-color: var(--bg-appearance);
+  max-width: 18rem;
+  height: 18rem;
+  border-radius: 1rem;
+}
+.storyImgContainer {
+  width: 100%;
+  position: relative;
+}
+.storyImg {
+  width: 100%;
+}
+.badge {
+  padding: 0.3rem 1rem;
+  border-radius: 3rem;
+  position: absolute;
+  left: 2rem;
+  bottom: -0.8rem;
+  background-color: #95b226;
   color: var(--bg-appearance);
 }
 
