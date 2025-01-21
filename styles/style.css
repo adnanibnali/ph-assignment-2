@@ -45,16 +45,6 @@ body {
   background-color: var(--primary-color);
   cursor: pointer;
 }
-.btnGhost {
-  padding: 0.7rem 2rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  background-color: transparent;
-  cursor: pointer;
-  transition: 0.5s all;
-}
 
 /* Shared Style Ends Here */
 
@@ -231,17 +221,18 @@ body {
 }
 .readMore {
   text-decoration: none;
+  font-weight: 700;
 }
 
-#btnKinder {
+.btnKinder {
   color: var(--tertiary-text);
   margin-bottom: 2rem;
 }
-#btnElementary {
+.btnElementary {
   color: var(--secondary-text);
   margin-bottom: 2rem;
 }
-#btnMiddle {
+.btnMiddle {
   color: var(--quinary-text);
   margin-bottom: 2rem;
 }
