@@ -370,6 +370,54 @@ body {
   background-color: #5d58f0;
 }
 
+/* Footer Section Style Starts Here */
+.footer {
+  width: 100%;
+  height: 32rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--tertiary-text);
+}
+.footerBranding {
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  height: 18rem;
+}
+.footerLogo {
+  width: 5rem;
+  height: 5rem;
+}
+.footerLogoContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footerLogoName {
+  font-size: 2.6rem;
+  color: white;
+  line-height: 2.5rem;
+  margin: 0;
+}
+.brandDetails,
+.footerNavigation p {
+  color: var(--bg-appearance);
+  font-size: 1.25rem;
+}
+.footerNavigation h3,
+.socialLinks h3 {
+  font-size: 1.5rem;
+  color: var(--bg-appearance);
+}
+.brandDetails {
+  padding: 1rem;
+}
+.footerNavigation,
+.socialLinks {
+  height: 18rem;
+}
+
 /* Media Queries For Responsive Website */
 @media screen and (max-width: 576px) {
   /* Media Query For Navbar */
@@ -441,5 +489,23 @@ body {
     font-size: 0.8rem;
     font-weight: 700;
     padding: 0.6rem 1.5rem;
+  }
+  /* Media Query For Our Stories Section */
+  .footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    align-items: start;
+    padding: 4rem 1.5rem;
+  }
+  .footerNavigation,
+  .socialLinks {
+    height: auto;
+  }
+  .footerLogoName {
+    font-size: 2rem;
+  }
+  .brandDetails {
+    padding: 0.7rem;
   }
 }
