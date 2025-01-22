@@ -370,6 +370,36 @@ body {
   background-color: #5d58f0;
 }
 
+/* Marquee Section Style Starts Here */
+.marqueeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+marquee {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+marquee p {
+  font-size: 1rem;
+  color: var(--bg-appearance);
+}
+.notice {
+  background-color: var(--secondary-color);
+  color: var(--bg-appearance);
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  position: absolute;
+  z-index: 5;
+  font-size: 1rem;
+  font-weight: 700;
+}
 /* Footer Section Style Starts Here */
 .footer {
   width: 100%;
