@@ -441,6 +441,9 @@ marquee p {
   font-size: 1.5rem;
   color: var(--bg-appearance);
 }
+.footerNavigation a {
+  text-decoration: none;
+}
 .brandDetails {
   padding: 1rem;
 }
