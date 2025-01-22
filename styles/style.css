@@ -408,6 +408,7 @@ marquee p {
   justify-content: space-around;
   align-items: center;
   background-color: var(--tertiary-text);
+  box-sizing: border-box;
 }
 .footerBranding {
   max-width: 24rem;
@@ -526,7 +527,7 @@ marquee p {
     flex-direction: column;
     align-items: center;
     align-items: start;
-    padding: 4rem 1.5rem;
+    padding: 4rem 0 4rem 1.5rem;
   }
   .footerNavigation,
   .socialLinks {
